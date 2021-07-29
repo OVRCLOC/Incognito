@@ -5,39 +5,46 @@ game.StarterGui:SetCore("SendNotification", {
 	Duration = 5;
 })
 
-local ScreenGui = Instance.new("ScreenGui")
+
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local MenuName = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local Mainscripts = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local More = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Teleports = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Premium = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
 local Credits = Instance.new("TextLabel")
+local Draggable = true
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-Main.Position = UDim2.new(0.225477695, 0, 0.20565106, 0)
+Main.Parent = game.StarterGui.ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Main.Position = UDim2.new(0.224317595, 0, 0.196004763, 0)
 Main.Size = UDim2.new(0, 646, 0, 327)
 
 UICorner.Parent = Main
 
 Frame.Parent = Main
 Frame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-Frame.Size = UDim2.new(0, 132, 0, 327)
+Frame.Position = UDim2.new(0.0185758509, 0, 0.0305810403, 0)
+Frame.Size = UDim2.new(0, 132, 0, 308)
 
 MenuName.Name = "MenuName"
 MenuName.Parent = Frame
 MenuName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MenuName.BackgroundTransparency = 1.000
-MenuName.Position = UDim2.new(-0.104797982, 0, 0, 0)
-MenuName.Size = UDim2.new(0, 158, 0, 47)
+MenuName.Position = UDim2.new(0.02399005, 0, 0.0324675329, 0)
+MenuName.Size = UDim2.new(0, 128, 0, 40)
 MenuName.Font = Enum.Font.SciFi
-MenuName.Text = "DaHub"
+MenuName.Text = "Incognito"
 MenuName.TextColor3 = Color3.fromRGB(255, 255, 255)
 MenuName.TextScaled = true
 MenuName.TextSize = 14.000
@@ -45,17 +52,67 @@ MenuName.TextWrapped = true
 
 UICorner_2.Parent = Frame
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-TextButton.Position = UDim2.new(0.0391415693, 0, 0.223241583, 0)
-TextButton.Size = UDim2.new(0, 120, 0, 44)
-TextButton.Font = Enum.Font.SciFi
-TextButton.Text = "Main Script"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 23.000
-TextButton.TextWrapped = true
+Mainscripts.Name = "Mainscripts"
+Mainscripts.Parent = Frame
+Mainscripts.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Mainscripts.Position = UDim2.new(0.0391415693, 0, 0.255709112, 0)
+Mainscripts.Size = UDim2.new(0, 120, 0, 44)
+Mainscripts.Font = Enum.Font.SciFi
+Mainscripts.Text = "Main Scripts"
+Mainscripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mainscripts.TextSize = 21.000
+Mainscripts.TextWrapped = true
 
-UICorner_3.Parent = TextButton
+UICorner_3.Parent = Mainscripts
+
+More.Name = "More"
+More.Parent = Frame
+More.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+More.Position = UDim2.new(0.0391415693, 0, 0.427787036, 0)
+More.Size = UDim2.new(0, 120, 0, 44)
+More.Font = Enum.Font.SciFi
+More.Text = "More Scripts"
+More.TextColor3 = Color3.fromRGB(255, 255, 255)
+More.TextSize = 21.000
+More.TextWrapped = true
+
+UICorner_4.Parent = More
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Frame
+Teleports.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Teleports.Position = UDim2.new(0.0391415693, 0, 0.606358469, 0)
+Teleports.Size = UDim2.new(0, 120, 0, 44)
+Teleports.Font = Enum.Font.SciFi
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 24.000
+Teleports.TextWrapped = true
+
+UICorner_5.Parent = Teleports
+
+Premium.Name = "Premium"
+Premium.Parent = Frame
+Premium.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Premium.Position = UDim2.new(0.0391415693, 0, 0.784929931, 0)
+Premium.Size = UDim2.new(0, 120, 0, 44)
+Premium.Font = Enum.Font.SciFi
+Premium.Text = "Premium Login"
+Premium.TextColor3 = Color3.fromRGB(255, 255, 255)
+Premium.TextSize = 17.000
+Premium.TextWrapped = true
+
+UICorner_6.Parent = Premium
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(1.11363637, 0, 0.77922076, 0)
+TextButton.Size = UDim2.new(0, 125, 0, 45)
+TextButton.Font = Enum.Font.SpecialElite
+TextButton.Text = "Hamburger Shop"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
 
 Credits.Name = "Credits"
 Credits.Parent = Main
@@ -69,3 +126,12 @@ Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextScaled = true
 Credits.TextSize = 14.000
 Credits.TextWrapped = true
+
+-- Scripts:
+
+local function YOMQBW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-275.294159, 19.7496624, -807.719727, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end
+coroutine.wrap(YOMQBW_fake_script)()
