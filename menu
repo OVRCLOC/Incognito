@@ -1,9 +1,9 @@
-
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Welcome To incognito GUI";
 	Text = "Executed | Thank You for Using Incognito";
-	Duration = 5;
+	Duration = 7;
 })
+
 
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -113,7 +113,7 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 24.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/CMB5EAmy"))()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-275.294159, 19.7496624, -807.719727, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
 
 Premium.Name = "Premium"
