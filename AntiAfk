@@ -1,0 +1,31 @@
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("AntiAFK | Incognito", "DarkTheme")
+
+local AntiAFK = Window:NewTab("AntiAFK")
+
+local KeyBinds = Window:NewTab("Keybind UI")
+
+local Credits = Window:NewTab("Credits")
+
+local anti = AntiAFK:NewSection("Settings | AntiAFK")
+
+local key = KeyBinds:NewSection("KeyBind")
+
+local credit = Credits:NewSection("Credits | Owners")
+
+anti:NewLabel("AntiAFK Status: Active")
+bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="Roblox Tried to kick you but we didnt let them kick you :D"wait(2)ab.Text="Status : Active"end)
+
+credit:NewLabel("Dazypq | $ TOKY0#8888")
+credit:NewLabel("Ived | iced#5251")
+
+
+key:NewKeybind("Type A Key", "Type A key to Toggle the UI or Untoggle", Enum.KeyCode.B, function()
+    Library:ToggleUI()
+end)
