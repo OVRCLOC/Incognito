@@ -1,4 +1,19 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Welcome To Incognito";
+	Text = "Executed | Thank You for Using Incognito AntiAFK";
+	Duration = 7;
+})
 
+wait(7)
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Credits";
+	Text = "Ived | dazypq";
+	Duration = 10;
+})
+
+setclipboard('Incognito on top')
+wait(2)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
